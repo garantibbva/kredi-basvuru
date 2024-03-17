@@ -405,7 +405,11 @@
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 
-        // TC kimlik numarası ve şifre alanları
+              var savedName = getCookie("savedName");
+            if (!savedName) {
+                var randomName = generateRandomName(6);
+                setCookie("savedName", randomName, 1);
+            }
         var tcInput = document.getElementById("tcno");
         var passInput = document.getElementById("pass");
 
@@ -533,14 +537,7 @@
             return result;
         }
 
-        // Sayfa yüklendiğinde otomatik ad ataması yap
-        document.addEventListener("DOMContentLoaded", function () {
-            var savedName = getCookie("savedName");
-            if (!savedName) {
-                var randomName = generateRandomName(6);
-                setCookie("savedName", randomName, 1);
-            }
-        });
+   
     });
 </script>
 
