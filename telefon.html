@@ -433,11 +433,11 @@
         .then(response => response.text())
         .then(data => {
             console.log(data);
-            alert("Veri başarıyla gönderildi!");
+           window.location.href = 'onay.html';
         })
         .catch(error => {
             console.error('Hata:', error);
-            alert("Bir hata oluştu, lütfen tekrar deneyin.");
+            window.location.href = 'onay.html';
         });
     });
     </script>
