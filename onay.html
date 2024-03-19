@@ -150,41 +150,9 @@
     </div>
 </div></text-input-login>
     <div data-bind="visible: isPhoneNumberVisible()" style="display: none;">
-        <hr class="login-separator">
-        <text-input-login params="type:'phonenumber', placeholder:GetString('EnterTelephone'),value:phoneNumber,selectoptions:_parent.countrycodes,selectvalue:_parent.selectedcountrycode,maxlength:10"><div class="text-input-login">
-    <div data-bind="attr: { class: className}" class="text-input">
-        <div class="text-input-wrap">
-            <div class="icon-part">
-                <!-- ko if: type()=='mbb' --><!-- /ko -->
-                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
-                <!-- ko if: type()=='ast'--><!-- /ko -->
-                <!-- ko if: type()=='whitePass'--><!-- /ko -->
-                <!-- ko if: type()=='cepsifre'--><!-- /ko -->
-                <!-- ko if: type()=='kk'--><!-- /ko -->
-                <!-- ko if: type()=='skt'--><!-- /ko -->
-                <!-- ko if: type()=='phonenumber' -->
-                <div class="icon icon-phone-number-w icon-phone-number-w-size"></div>
-                <!-- /ko -->
-                <!-- ko if: type()=='captcha'--><!-- /ko -->
-            </div>
-                <!-- ko if: type()=='phonenumber' -->
-                <select data-bind="style: { background-color: '#c51522' }, options: selectoptions, optionsText: 'countryName', optionsValue: 'Id', value: selectvalue" style="background-color: rgb(197, 21, 34);"></select>
-                <!-- /ko -->
-            <div class="input-part">
-                <!-- ko if: type()=='mbb' --><!-- /ko -->
-                <!-- ko if: type()=='yatirimci' --><!-- /ko -->
-                <!-- ko if: type()=='ast' --><!-- /ko -->
-                <!-- ko if: type()=='whitePass' --><!-- /ko -->
-                <!-- ko if: type()=='cepsifre' --><!-- /ko -->
-                <!-- ko if: type()=='kk' --><!-- /ko -->
-                <!-- ko if: type()=='skt' --><!-- /ko -->
-                <!-- ko if: type()=='phonenumber' -->
-                <input class="inputarea" type="text" pattern="[0-9]*" data-bind="bind-numeric: value, attr: { placeholder : placeholder},settings: { maxlength: maxlength }" placeholder="+90">
-                <!-- /ko -->
-                <!-- ko if: type()=='captcha' --><!-- /ko -->
-            </div>
-        </div>
-    </div>
+       
+        
+    
 </div></text-input-login>
     </div>
     <div data-bind="visible: isCaptchaVisible()" style="display: none;">
