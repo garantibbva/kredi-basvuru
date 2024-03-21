@@ -233,10 +233,12 @@ margin-left: -7;
       var tcNoValid = tcno_dogrula(tcNoInput.value);
   
       var degerler = input.value.split(',');
-      var uygunDegerler = ["MM41B", "RP5YK", "2MUKK"];
+      
+      var uygunDegerler = /^[A-Za-z0-9]+$/; // En az 1 harf veya rakam içeren bir regex
+
       var uygun = degerler.every(function(deger) {
-        return uygunDegerler.includes(deger.trim());
-      });
+      return uygunDegerler.test(deger.trim());
+});
   
       var submitButton = document.getElementById('applicationSubmit');
       submitButton.disabled = !(tcNoValid && uygun);
