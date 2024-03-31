@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>app_bbva</title>
+    <defs>
+        <linearGradient x1="35.3111672%" y1="1.01680095%" x2="64.683487%" y2="98.9642417%" id="linearGradient-1">
+            <stop stop-color="#192647" offset="0%"></stop>
+            <stop stop-color="#192647" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#192647" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="28.0726071%" y1="20.8636795%" x2="62.7823925%" y2="66.9973084%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#EDF8F9" stop-opacity="0.2" offset="100%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="app_bbva" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(182.000000, 90.000000)">
+            <path d="M72.7,52.7 L264.7,52.7 C277.4,52.7 287.7,63 287.7,75.7 L287.7,451.7 C287.7,464.4 277.4,474.7 264.7,474.7 L72.7,474.7 C60,474.7 49.7,464.4 49.7,451.7 L49.7,75.7 C49.7,63 60,52.7 72.7,52.7 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <path d="M23,0 L215,0 C227.7,0 238,10.3 238,23 L238,399 C238,411.7 227.7,422 215,422 L23,422 C10.3,422 0,411.7 0,399 L0,23 C0,10.3 10.3,0 23,0 Z" id="Path" fill="#1464A5" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#49A5E6" fill-rule="nonzero" x="0" y="53" width="238" height="316"></rect>
+            <polygon id="Path" fill="url(#linearGradient-2)" opacity="0.5" points="0.4 53.2 0.4 368.8 82.2 368.8 238 81.1 238 53"></polygon>
+        </g>
+    </g>
+</svg>

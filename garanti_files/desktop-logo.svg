@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>desktop_logo</title>
+    <defs>
+        <linearGradient x1="23.4615908%" y1="23.8904222%" x2="68.1659172%" y2="76.6272403%" id="linearGradient-1">
+            <stop stop-color="#192647" offset="0%"></stop>
+            <stop stop-color="#192647" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#192647" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="15.039314%" y1="36.0581063%" x2="71.5359719%" y2="57.8976014%" id="linearGradient-2">
+            <stop stop-color="#EAF9FA" offset="0%"></stop>
+            <stop stop-color="#EAF9FA" stop-opacity="0.2" offset="100%"></stop>
+            <stop stop-color="#EAF9FA" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="desktop_logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(36.000000, 129.000000)" id="Path">
+            <path d="M567.6,351 L567.6,340.3 C567.6,338.6 566.3,337.3 564.6,337.3 L541.5,337.3 C542,335.5 542.3,333.6 542.3,331.7 L542.3,72 C542.3,59.3 532,49 519.3,49 L115.3,49 C102.6,49 92.3,59.3 92.3,72 L92.3,331.7 C92.3,333.6 92.6,335.5 93.1,337.3 L69.7,337.3 C68,337.3 66.7,338.6 66.7,340.3 L66.7,351 L54.6,351 C52.9,351 51.6,352.3 51.6,354 L51.6,378 C51.6,379.7 52.9,381 54.6,381 L577.9,381 C579.6,381 580.9,379.7 580.9,378 L580.9,354 C580.9,352.3 579.6,351 577.9,351 L567.6,351 Z" fill="url(#linearGradient-1)"></path>
+            <path d="M64.3,0 L468.3,0 C481,0 491.3,10.3 491.3,23 L491.3,23 L491.3,304.1 L491.3,304.1 L41.3,304.1 L41.3,304.1 L41.3,23 C41.3,10.3 51.6,0 64.3,0 Z" fill="#1464A5" fill-rule="nonzero"></path>
+            <path d="M71,20 L461,20 C466.5,20 471,24.5 471,30 L471,258 C471,263.5 466.5,268 461,268 L71,268 C65.5,268 61,263.5 61,258 L61,30 C61,24.5 65.5,20 71,20 Z" fill="#49A5E6" fill-rule="nonzero"></path>
+            <path d="M3.6,302 L526.9,302 C528.6,302 529.9,303.3 529.9,305 L529.9,329 C529.9,330.7 528.6,332 526.9,332 L3.6,332 C1.9,332 0.6,330.7 0.6,329 L0.6,305 C0.6,303.4 1.9,302 3.6,302 Z" fill="#1464A5" fill-rule="nonzero"></path>
+            <path d="M516.6,302 L15.6,302 L15.6,291.3 C15.6,289.6 16.9,288.3 18.6,288.3 L513.6,288.3 C515.3,288.3 516.6,289.6 516.6,291.3 L516.6,302 Z" fill="#043263" fill-rule="nonzero"></path>
+            <path d="M300.2,312 L235.3,312 C229.8,312 225.3,307.5 225.3,302 L310.2,302 C310.1,307.5 305.7,312 300.2,312 Z" fill="#5AC4C4" fill-rule="nonzero"></path>
+            <path d="M71,268 L269,268 L402.1,20 L71,20 C65.5,20 61,24.5 61,30 L61,258 C61,263.5 65.5,268 71,268 Z" fill="url(#linearGradient-2)" opacity="0.5"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>accounts_cards</title>
+    <defs>
+        <linearGradient x1="29.2122614%" y1="22.5891184%" x2="70.8039329%" y2="77.4076391%" id="linearGradient-1">
+            <stop stop-color="#192647" offset="0%"></stop>
+            <stop stop-color="#192647" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#192647" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#043263" offset="0%"></stop>
+            <stop stop-color="#043263" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="17.0911394%" y1="36.5999023%" x2="74.4016268%" y2="58.2872772%" id="linearGradient-3">
+            <stop stop-color="#EAF9FA" offset="0%"></stop>
+            <stop stop-color="#EAF9FA" stop-opacity="0.2" offset="100%"></stop>
+            <stop stop-color="#EAF9FA" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="accounts_cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(80.000000, 154.000000)">
+            <path d="M455,44.74 L140.74,44.74 C129.694305,44.74 120.74,53.694305 120.74,64.74 L120.74,134.17 L62.63,134.17 C51.584305,134.17 42.63,143.124305 42.63,154.17 L42.63,327.68 C42.6351556,335.352745 47.0293726,342.346193 53.94,345.68 C54.39,345.89 54.85,346.09 55.31,346.27 L55.74,346.44 C57.9351257,347.24036 60.2535171,347.65 62.59,347.65 L376.81,347.65 C387.855695,347.65 396.81,338.695695 396.81,327.65 L396.81,258.24 L455,258.24 C465.979421,258.24 474.88,249.339421 474.88,238.36 L474.88,64.63 C474.88,53.6489604 465.981038,44.7455209 455,44.74 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#1464A5" fill-rule="nonzero" x="78.45" y="0.78" width="354.1" height="213.5" rx="19.96"></rect>
+            <path d="M412.66,214.28 C423.642657,214.274482 432.544482,205.372657 432.55,194.39 L432.55,20.66 C432.544479,9.67896177 423.64104,0.78 412.66,0.78 L311.34,0.78 L197.82,214.28 L412.66,214.28 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#043263" fill-rule="nonzero" opacity="0.6" style="mix-blend-mode: multiply;" x="78.45" y="31.15" width="354.1" height="34.72"></rect>
+            <rect id="Rectangle" fill="#D4EDFC" fill-rule="nonzero" x="130.52" y="132.7" width="249.95" height="31.24" rx="2.6"></rect>
+            <rect id="Rectangle" fill="#49A5E6" fill-rule="nonzero" x="0.34" y="90.17" width="354.1" height="213.5" rx="19.96"></rect>
+            <path d="M20.3,303.67 L195.56,303.67 L300.28,90.17 L20.3,90.17 C9.254305,90.17 0.3,99.124305 0.3,110.17 L0.3,283.71 C0.322060186,294.740071 9.26990714,303.67 20.3,303.67 L20.3,303.67 Z" id="Path" fill="url(#linearGradient-3)" opacity="0.5"></path>
+            <rect id="Rectangle" fill="#D4EDFC" fill-rule="nonzero" x="29.05" y="193.15" width="151.88" height="31.24" rx="2.6"></rect>
+            <rect id="Rectangle" fill="#D4EDFC" fill-rule="nonzero" x="29.05" y="241" width="295.08" height="31.24" rx="2.6"></rect>
+        </g>
+    </g>
+</svg>

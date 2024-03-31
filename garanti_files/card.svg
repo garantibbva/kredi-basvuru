@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-card copy</title>
+    <g id="01_Product_Slider" stroke="none" stroke-width="1" fill="none"
+       fill-rule="evenodd">
+        <g id="01_Product_Slider_1200" transform="translate(-382.000000, -81.000000)"
+           fill="#1464A5">
+            <g id="Group" transform="translate(110.000000, 79.000000)">
+                <path d="M294.999305,2 C295.551974,2 296,2.44494629 296,2.99339768 L296,19.0066023 C296,19.5552407 295.552531,20 294.999305,20 L273.000695,20 C272.448026,20 272,19.5550537 272,19.0066023 L272,8 L290,8 L292,6 L272,6 L272,2.99339768 C272,2.44475929 272.447469,2 273.000695,2 L294.999305,2 Z M292,14 L285,14 L285,16 L290,16 L292,14 Z"
+                      id="icon-card-copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>
